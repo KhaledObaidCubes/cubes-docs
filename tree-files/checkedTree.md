@@ -1,4 +1,4 @@
-## Tree with Checkboxes
+### Tree with Checkboxes
 
 Extending the Core: TreeManagerWithCheckBox`<T>`
 
@@ -20,6 +20,7 @@ export class TreeManagerWithCheckBox<T extends TCheckedTree> extends TreeManager
 ```
 
 This means:
+
 <ul>
 <li>It inherits all functionality from TreeManager (add/remove nodes, depth tracking, JSON export, etc.)</li>
 <li>It augments the behavior with checkbox-specific logic:</li>
@@ -31,46 +32,47 @@ This means:
 ## Example Usage
 
 ```ts
-import { TreeManagerWithCheckBox } from 'your-tree-manager-lib'
+import { TreeManagerWithCheckBox } from "your-tree-manager-lib";
 
 const tree = new TreeManagerWithCheckBox({
-  id: 'root',
-  name: 'Root Node',
+  id: "root",
+  name: "Root Node",
   checked: false,
   children: [
     {
-      id: 'child-1',
-      name: 'Child 1',
+      id: "child-1",
+      name: "Child 1",
       checked: false,
-      children: []
+      children: [],
     },
     {
-      id: 'child-2',
-      name: 'Child 2',
+      id: "child-2",
+      name: "Child 2",
       checked: false,
-      children: []
-    }
-  ]
-})
+      children: [],
+    },
+  ],
+});
 
 // Check the root, and all children will follow
-tree.checkMe(true)
+tree.checkMe(true);
 
-console.log(tree.checked) // true
-console.log(tree.children.map(c => c.data.checked)) // [true, true]
+console.log(tree.checked); // true
+console.log(tree.children.map((c) => c.data.checked)); // [true, true]
 ```
 
 ## Inherited Features from TreeManager
+
 Since TreeManagerWithCheckBox extends TreeManager, you also get:
 
-```addNode()```, ```removeNode()```
+`addNode()`, `removeNode()`
 
-```addNodeInstance()```, ```addNodeToTarget()```
+`addNodeInstance()`, `addNodeToTarget()`
 
 depth tracking
 
 parent / children relationships
 
-```toJSONFormat()``` to export the tree
+`toJSONFormat()` to export the tree
 
-Recursive ```updateChildDepths()``` when moving nodes
+Recursive `updateChildDepths()` when moving nodes

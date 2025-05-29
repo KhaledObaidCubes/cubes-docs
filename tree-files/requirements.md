@@ -1,4 +1,4 @@
-## Requirements & Configuration
+### Requirements & Configuration
 
 # TypeScript ≥ 5.0
 
@@ -42,7 +42,7 @@ This library uses advanced TypeScript features such as generic types, optional c
     "paths": {
       "@/*": ["src/*"],
       "@app/*": ["src/app/*"],
-    
+
     }
   },
   "files": ["./vue-shims.d.ts"],
@@ -51,6 +51,7 @@ This library uses advanced TypeScript features such as generic types, optional c
   "compileOnSave": false
 }
 ```
+
 ##
 
 # Node.js ≥ 19.0
@@ -59,13 +60,15 @@ Node.js version 14 or higher is required due to support for modern JavaScript sy
 
 Linking the Library
 
-To use this library during local development, navigate to tree class and build a version we **uuse *vite* build tool**, then link it locally:
+To use this library during local development, navigate to tree class and build a version we **uuse _vite_ build tool**, then link it locally:
+
 ```Terminal
 cd your-tree-manager-lib
 npm link
 ```
 
 Now navigate to your project thar consume tree object and set the tree as dependency:
+
 ```Terminal
 npm link tree
 ```
@@ -75,6 +78,5 @@ npm link tree
 These are packages/tools your project uses during development:
 | Requirements | Version |
 | :----------: | ------: |
-| TypeScript   | ≥ 5.0   |
-| Node.js      | ≥ 19.0  |
-
+| TypeScript | ≥ 5.0 |
+| Node.js | ≥ 19.0 |

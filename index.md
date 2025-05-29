@@ -3,41 +3,28 @@
 layout: home
 
 hero:
-  name: "TreeManager Documentation"
-  text: "A generic, extensible class for tree structure with custom behaviors."
-  tagline: A Lightweight and Extensible TypeScript Tree Data Structure
+  name: "CUBES Documentation"
+  text: "Streamlined docs for reusable components."
+  tagline: "Build fast. Code clean. Reuse more."
   image:
-    src: assets/king.png
-    alt: Tree
+    src: "assets/booksShelf.png"
+    alt: DOCS
   actions:
     - theme: brand
       text: Introduction
       link: /introduction
-    - theme: alt
-      text: Tree Node
-      link: /nestDeeperLevels
 
 features:
-  - title: Typescript
-    details: Type-safe tree node management
-  - title: Generic
-    details: Supports any data type via generics
-  - title: JSON
-    details: JSON export of tree structure
+  - title: Typescript Support
+    icon:
+      src: "assets/typescript2.png"
+    details: Type-safe tree node management.
+  - title: Composable Components
+    icon:
+      src: "assets/gear.png"
+    details: Easily combine modular components to build complex interfaces.
+  - title: Built for Performance
+    icon:
+      src: "assets/performance.png"
+    details: Optimized for fast rendering and minimal bundle sizes.
 ---
-
-```scheme
-Instances Tree
-TREEI created by adding new instances for each node
-═══ treeI root (IIP=0)
-    ╠══ 1 (IIP=0)
-    ║   ╠══ 1.1 (IIP=0)
-    ║   ║   ╚══ 1.1.1 (IIP=0)
-    ║   ║       ╚══ 1.1.1.1 (IIP=0)
-    ║   ╠══ 1.2 (IIP=1)
-    ║   ╚══ 1.3 (IIP=2)
-    ╠══ 2 (IIP=1)
-    ╚══ 3 (IIP=2)
-        ╚══ 3.1 (IIP=0)
-
-```
